@@ -12,7 +12,10 @@ import { ExampleResolver } from './example.resolver';
       driver: ApolloDriver,
       autoSchemaFile: true,
       // plugins: [new ComplexityPlugin(20)],
-      cors: { origin: true },
+      cors: {
+        origin: '*',
+        credentials: true,
+      },
     }),
   ],
   controllers: [AppController],
