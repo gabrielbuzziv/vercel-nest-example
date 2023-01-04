@@ -7,7 +7,7 @@ export class AppController {
 
   @Get()
   getHello(@Headers() headers: any): string {
-    console.log('🚀 Headers', headers);
+    console.log('🚀 Headers:', headers);
 
     return this.appService.getHello();
   }
