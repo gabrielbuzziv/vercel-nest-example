@@ -13,8 +13,11 @@ import { ExampleResolver } from './example.resolver';
       autoSchemaFile: true,
       // plugins: [new ComplexityPlugin(20)],
       cors: {
-        origin: 'http://127.0.0.1:5173',
         credentials: true,
+        origin: true,
+        methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+        allowedHeaders:
+          'Content-Type,Accept,Authorization,Access-Control-Allow-Origin',
       },
     }),
   ],
